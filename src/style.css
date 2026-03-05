@@ -1,5 +1,15 @@
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
 }
 
 #navbar {
@@ -32,7 +42,7 @@ html {
 #projectsSection {
   background-color: white;
   min-height: 100vh;
-  padding: 6rem;
+  padding: 6rem 2rem;
 }
 
 #projectText {
@@ -70,8 +80,9 @@ html {
   background-color: #2d545e;
   color: #e1b382;
   padding: 1rem;
-  margin-left: 20%;
-  margin-right: 20%;
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
   border: 0.5px solid black;
 }
 
@@ -102,6 +113,16 @@ html {
   cursor: pointer;
 }
 
+#linkedInContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#linkedInImg {
+  width: 30px;
+}
+
 #mailLink {
   text-decoration: none;
   color: #e1b382;
@@ -121,4 +142,18 @@ html {
 #projectThree:hover,
 #projectFour:hover {
   transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  #projectsSection {
+    padding: 4rem 1.5rem;
+  }
+
+  #aboutMeCard {
+    width: 95%;
+  }
+
+  #aboutImg {
+    width: 100%;
+  }
 }
