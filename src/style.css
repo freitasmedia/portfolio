@@ -1,0 +1,124 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-link {
+  color: #e1b382;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #2d545e;
+  transform: scale(1.03);
+}
+
+#homeSection {
+  position: relative;
+  background: url("/hero.jpg") center/cover no-repeat;
+  min-height: 100vh;
+}
+
+#projectsSection {
+  background-color: white;
+  min-height: 100vh;
+  padding: 6rem;
+}
+
+#projectText {
+  color: #2d545e;
+}
+
+.project-img {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.5px solid black;
+}
+
+#projectAboutText {
+  background-color: #2d545e;
+  color: #e1b382;
+  padding: 1rem;
+  text-align: left;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#aboutMeSection {
+  background-color: white;
+  min-height: 100vh;
+  padding: 6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutMeCard {
+  background-color: #2d545e;
+  color: #e1b382;
+  padding: 1rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 0.5px solid black;
+}
+
+#aboutImg {
+  width: 60%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+#whoText {
+  margin-bottom: 20px;
+  color: #2d545e;
+}
+
+#contactCard {
+  background-color: #2d545e;
+  color: #e1b382;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+#linkedInLink {
+  text-decoration: none;
+  color: #e1b382;
+  cursor: pointer;
+}
+
+#mailLink {
+  text-decoration: none;
+  color: #e1b382;
+  cursor: pointer;
+}
+
+#projectOne,
+#projectTwo,
+#projectThree,
+#projectFour {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#projectOne:hover,
+#projectTwo:hover,
+#projectThree:hover,
+#projectFour:hover {
+  transform: scale(1.03);
+}
