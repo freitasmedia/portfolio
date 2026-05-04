@@ -9,15 +9,17 @@
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
-      
     />
     <meta property="og:title" content="Daniel de Freitas Portfolio" />
-<meta property="og:description" content="Frontend Developer" />
-<meta property="og:image" content="https://danieldefreitas.vercel.app/hero.jpg" />
-<meta property="og:url" content="https://danieldefreitas.vercel.app/" />
-<meta property="og:type" content="website" />
+    <meta property="og:description" content="Frontend Developer" />
+    <meta
+      property="og:image"
+      content="https://danieldefreitas.vercel.app/hero.jpg"
+    />
+    <meta property="og:url" content="https://danieldefreitas.vercel.app/" />
+    <meta property="og:type" content="website" />
 
-    <title>portfolio</title>
+    <title>Daniel de Freitas | Frontend Developer</title>
   </head>
   <body>
     <div id="app">
@@ -40,21 +42,21 @@
           >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a id="homeNav" class="nav-link" href="#homeSection">Hem</a>
+                <a id="homeNav" class="nav-link" href="#homeSection">Home</a>
               </li>
               <li class="nav-item">
                 <a id="ProjectsNav" class="nav-link" href="#projectsSection"
-                  >Projekt</a
+                  >Projects</a
                 >
               </li>
               <li class="nav-item">
                 <a id="aboutNav" class="nav-link" href="#aboutMeSection"
-                  >Om mig</a
+                  >About Me</a
                 >
               </li>
               <li class="nav-item">
                 <a id="contactNav" class="nav-link" href="#contactSection"
-                  >Kontakt</a
+                  >Contact</a
                 >
               </li>
             </ul>
@@ -66,130 +68,101 @@
     <section id="homeSection"></section>
 
     <section id="projectsSection">
-      <div class="container text-center">
-        <div class="row row-cols-1">
-          <div class="col">
-            <div
-              id="projectOne"
-              onclick="
-                window.open('https://github.com/freitasmedia/webshop', '_blank')
-              "
-            >
-              <h3 id="projectText">Godisråttan</h3>
-              <img
-                class="project-img"
-                src="/g-home-d.png"
-                alt="Startsida för webbshoppen Godisråttan med produktlista och navigation"
-              />
-              <p id="projectAboutText">
-                Vårt första grupparbete under utbildningen. Vi hade tidigare
-                designat egna webshoppar under vår UX-kurs, så designen på
-                webbsidan har följt en gruppmedlems design i figma. <br /><br />
-                Jag har skapat navbaren och varukorgen för detta projekt.
-                <br /><br />
-                Klicka för att öppna projektet i GitHub!
-              </p>
-            </div>
-          </div>
+      <div class="projects-grid">
+        <a
+          href="https://github.com/freitasmedia/webshop"
+          target="_blank"
+          class="project-card"
+        >
+          <img src="/g-home-d.png" alt="Godisråttan project" />
 
-          <div class="col">
-            <div
-              id="projectTwo"
-              onclick="
-                window.open(
-                  'https://github.com/freitasmedia/theTodos',
-                  '_blank',
-                )
-              "
-            >
-              <h3 id="projectText">To Do</h3>
-              <img
-                class="project-img"
-                src="/t-home.png"
-                alt="Startsida för en To Do-app"
-              />
-              <p id="projectAboutText">
-                Den första inlämningsuppgiften, min alldeles egna "To Do" app!
-                Objekten sparas i local storage och uppdateras beroende på vad
-                användaren har för sig.
-                <br /><br />
-                Klicka för att öppna projektet i GitHub!
-              </p>
-            </div>
+          <div class="project-overlay">
+            <h3>Godisråttan</h3>
+            <p>
+              Group e-commerce project with focus on UI and shopping cart logic.
+              I made the navbar and shopping cart functionality.
+            </p>
+            <span>HTML • CSS • TypeScript</span>
           </div>
+        </a>
 
-          <div class="col">
-            <div
-              id="projectThree"
-              onclick="
-                window.open(
-                  'https://www.figma.com/design/hymuZT7no0WHYRf4fsAaFr/RaceShop.se?node-id=0-1&t=qsiVy8iSv6hC7FSO-1',
-                  '_blank',
-                )
-              "
-            >
-              <h3 id="projectText">Race Shop</h3>
-              <img
-                class="project-img"
-                src="/rs-desk.png"
-                alt="Startsida för en webshop som säljer motorcykel tillbehör"
-              />
-              <p id="projectAboutText">
-                I UX kursen fick vi i uppgift att designa en webshop i Figma. 
-                Jag valde att designa en webshop som säljer motorcykel tillbehör.
-                <br /><br />
-                Klicka för att öppna projektet i Figma!
-              </p>
-            </div>
+        <a
+          href="https://github.com/freitasmedia/theTodos"
+          target="_blank"
+          class="project-card"
+        >
+          <img src="/t-home.png" alt="Todo app" />
+
+          <div class="project-overlay">
+            <h3>To Do App</h3>
+            <p>Task manager with localStorage and dynamic UI updates.</p>
+            <span>HTML • CSS • TypeScript</span>
           </div>
+        </a>
 
-          <div class="col">
-            <div
-              id="projectFour"
-              onclick="
-                window.open(
-                  'https://github.com/freitasmedia/theCrudApi',
-                  '_blank',
-                )
-              "
-            >
-              <h3 id="projectText">CRUD</h3>
-              <img
-                class="project-img"
-                src="/crud2.png"
-                alt="Kod som visar CRUD operationer i JavaScript"
-              />
-              <p id="projectAboutText">
-                Den andra inlämningsuppgiften är ett REST-baserat CRUD-API för produkter. 
-                API:et gör det möjligt att skapa, läsa, uppdatera och ta bort produkter via GET, POST, PATCH och DELETE. 
-                
-                <br /><br />
-                Klicka för att öppna projektet i GitHub!
-              </p>
-            </div>
+        <a
+          href="https://www.figma.com/design/hymuZT7no0WHYRf4fsAaFr/RaceShop.se?node-id=0-1&t=qsiVy8iSv6hC7FSO-1"
+          target="_blank"
+          class="project-card"
+        >
+          <img src="/rs-desk.png" alt="Race shop design" />
+
+          <div class="project-overlay">
+            <h3>Race Shop</h3>
+            <p>I made the design for a motorcycle parts e-commerce platform.</p>
+            <span>Figma • UX/UI Design</span>
           </div>
-        
-      
-    </section>
+        </a>
 
-    <section id="aboutMeSection">
-      <h2 id="whoText" class="text-center">Vem är jag?</h2>
-      <img id="aboutImg" src="/about.jpg" alt="picture of me Daniel" />
-      <div id="aboutMeCard">
-        <p>
-          Hej! Jag studerar för närvarande "Front End Development" på
-          Medieinstitutet. Jag har ofta beskrivits av mina kollegor som positiv,
-          lätt att samarbeta med och som någon som alltid bidrar med en bra
-          inställning. Jag tar ansvar, trivs med samarbete och är alltid villig
-          att hjälpa till när det behövs. <br /><br />
-          På min fritid tycker jag om att hålla mig aktiv genom träning, spela
-          PlayStation för att koppla av, och jag älskar att ta ut motorcykeln på
-          en tur när vädret tillåter. Detta var en kort presentation om mig.
-          Tack för att du tog dig tid att läsa!
-        </p>
+        <a
+          href="https://github.com/freitasmedia/theCrudApi"
+          target="_blank"
+          class="project-card"
+        >
+          <img src="/crud2.png" alt="CRUD API" />
+
+          <div class="project-overlay">
+            <h3>CRUD API</h3>
+            <p>
+              RESTful API with MongoDB, structured architecture, and full CRUD
+              operations.
+            </p>
+            <span>Node.js • Express • MongoDB • Mongoose • REST API</span>
+          </div>
+        </a>
       </div>
     </section>
 
+    <section id="aboutMeSection">
+      <h2 id="aboutText" class="text-center">About Me</h2>
+
+      <div class="about-card">
+        <img src="/about.jpg" alt="Daniel de Freitas" />
+
+        <div class="about-overlay">
+          <h3>Daniel de Freitas</h3>
+
+          <p>
+            Hi! I’m currently studying Front End Development at Medieinstitutet.
+            I’m often described as positive, easy to work with, and someone who
+            always brings good energy to a team. I take responsibility, enjoy
+            collaborating, and I’m always happy to help when needed.
+
+            <br /><br />
+
+            In my free time, I like to stay active through training, relax by
+            playing PlayStation, and take my motorcycle out for a ride whenever
+            the weather allows. Thanks for taking the time to read a bit about
+            me!
+
+            <br /><br />
+
+            (Currently looking for an internship (LIA) where I can grow as a
+            developer and contribute to a team.)
+          </p>
+        </div>
+      </div>
+    </section>
     <section id="contactSection">
       <div id="contactCard">
         <h2>Reach out!</h2>
@@ -217,7 +190,9 @@
       </div>
     </section>
 
-    <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      &uarr;
+    </button>
 
     <script type="module" src="/src/main.ts"></script>
     <script
