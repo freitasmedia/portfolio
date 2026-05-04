@@ -54,6 +54,7 @@ body {
   text-decoration: none;
   color: white;
   border: solid rgb(184, 184, 184) 0.5px;
+  height: 350px;
 }
 
 .project-btn {
